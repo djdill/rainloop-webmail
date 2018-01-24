@@ -1,3 +1,20 @@
+24/1/2018
+Forked copy to change rainloop/v/0.0.0/app/templates/Views/User/MailMessageList.html
+So it ends up looking like this:
+
+<div align="center">
+<img width="600" heigth="350" src="https://github.com/djdill/rainloop-webmail/blob/master/RainloopLayout.png?raw=true">
+<img width="600" heigth="350" src="https://github.com/djdill/rainloop-webmail/blob/master/RainloopLayout2.png?raw=true">
+</div>
+
+Djdill
+
+
+
+
+
+
+
 <div align="center">
   <a href="https://github.com/RainLoop/rainloop-webmail">
     <img width="200" heigth="200" src="https://www.rainloop.net/static/img/logo-256x256-tiny.png">
@@ -16,10 +33,9 @@
   <br>
 </div>
 
-24/1/2018
-Forked copy to change rainloop/v/0.0.0/app/templates/Views/User/MailMessageList.html
 
-Djdill
+
+
 
 For more information about the product, check [rainloop.net](http://www.rainloop.net/).
 
