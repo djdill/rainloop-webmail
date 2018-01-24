@@ -3,6 +3,16 @@
 		data-bind="css: {'message-selected': isMessageSelected, 'message-focused': !messageListFocused(), 'loading': messageListCompleteLoadingThrottle, 'hideMessageListCheckbox': !useCheckboxesInList() }">
 		<div class="toolbar">
 			<div class="btn-toolbar">
+				<!-- Move searching to the top of the page -->
+				<div class="input-append pull-right" data-bind="visible: allowSearch" style="position: relative; right: 260px;">    
+						<div class="close-input-wrp">
+							<a class="close" data-bind="click: cancelSearch, visible: '' !== messageListSearchDesc()">&times;</a>
+							<input type="text" class="i18n span4 inputSearch" tabindex="-1" placeholder="Search" autocorrect="off" autocapitalize="off" data-i18n="[placeholder]SEARCH/MAIN_INPUT_PLACEHOLDER" data-bind="value: inputProxyMessageListSearch, onEnter: searchEnterAction, hasfocus: inputMessageListSearchFocus" />
+						</div>
+						<a class="btn buttonMoreSearch" data-bind="visible: allowSearchAdv, click: advancedSearchClick">
+							<span class="caret"></span>
+						</a>
+				</div>
 				<!-- ko if:  allowFolders && mobile -->
 				<div class="btn-group" data-bind="visible: leftPanelDisabled()">
 					<a class="btn btn-thin-2 single" data-bind="click: showLeft">
@@ -152,16 +162,7 @@
 		<div class="b-message-list-wrapper">
 			<div class="second-toolbar thm-message-list-top-toolbar">
 				<div class="form-inline">
-					<div class="input-append pull-right" data-bind="visible: allowSearch">
-						<div class="close-input-wrp">
-							<a class="close" data-bind="click: cancelSearch, visible: '' !== messageListSearchDesc()">&times;</a>
-							<input type="text" class="i18n span4 inputSearch" tabindex="-1" placeholder="Search" autocorrect="off" autocapitalize="off" data-i18n="[placeholder]SEARCH/MAIN_INPUT_PLACEHOLDER" data-bind="value: inputProxyMessageListSearch, onEnter: searchEnterAction, hasfocus: inputMessageListSearchFocus" />
-						</div>
-						<a class="btn buttonMoreSearch" data-bind="visible: allowSearchAdv, click: advancedSearchClick">
-							<span class="caret"></span>
-						</a>
-					</div>
-					<i class="checkboxCkeckAll" data-bind="css: checkAll() ? (isIncompleteChecked() ? 'icon-checkbox-partial' : 'icon-checkbox-checked') : 'icon-checkbox-unchecked'"></i>
+				<i class="checkboxCkeckAll" data-bind="css: checkAll() ? (isIncompleteChecked() ? 'icon-checkbox-partial' : 'icon-checkbox-checked') : 'icon-checkbox-unchecked'"></i>
 				</div>
 			</div>
 			<div class="line-loading e-strip-animation" data-bind="visible: messageListCompleteLoadingThrottle"></div>
