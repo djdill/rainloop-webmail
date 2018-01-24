@@ -16,6 +16,10 @@
   <br>
 </div>
 
+Forked copy to change rainloop/v/0.0.0/app/templates/Views/User/MailMessageList.html
+
+Djdill
+
 For more information about the product, check [rainloop.net](http://www.rainloop.net/).
 
 Information about installing the product, check the [documentation page](http://www.rainloop.net/docs/installation/).
