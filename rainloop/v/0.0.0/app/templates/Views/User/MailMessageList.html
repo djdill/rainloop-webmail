@@ -159,12 +159,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-message-list-wrapper">
-			<div class="second-toolbar thm-message-list-top-toolbar">
-				<div class="form-inline">
-				<i class="checkboxCkeckAll" data-bind="css: checkAll() ? (isIncompleteChecked() ? 'icon-checkbox-partial' : 'icon-checkbox-checked') : 'icon-checkbox-unchecked'"></i>
-				</div>
-			</div>
+		<div class="b-message-list-wrapper" style="top: 0; position: unset;>
 			<div class="line-loading e-strip-animation" data-bind="visible: messageListCompleteLoadingThrottle"></div>
 			<div class="mainDelimiter toolbarDelimiter"></div>
 			<div class="b-content" data-bind="nano: true, scrollerShadows: true, initDom: dragOverBodyArea">
@@ -206,14 +201,6 @@
 				</div>
 			</div>
 			<div class="mainDelimiter footerDelimiter"></div>
-			<div class="b-footer thm-message-list-bottom-toolbar">
-				<span data-tooltip-i18n="off" data-tooltip-mobile="on" data-bind="visible: 0 < userUsageProc(), tooltip: quotaTooltip" class="e-quota">
-					<span data-bind="text: userUsageProc"></span>%
-				</span>
-				<div class="pull-right">
-					<!-- ko template: { name: 'Pagenator', data: messageListPagenator } --><!-- /ko -->
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
