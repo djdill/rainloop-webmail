@@ -16,6 +16,7 @@
   <br>
 </div>
 
+24/1/2018
 Forked copy to change rainloop/v/0.0.0/app/templates/Views/User/MailMessageList.html
 
 Djdill
