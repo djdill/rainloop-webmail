@@ -162,7 +162,7 @@
 		<div class="b-message-list-wrapper" style="top: 0; position: unset;>
 			<div class="line-loading e-strip-animation" data-bind="visible: messageListCompleteLoadingThrottle"></div>
 			<div class="mainDelimiter toolbarDelimiter"></div>
-			<div class="b-content" data-bind="nano: true, scrollerShadows: true, initDom: dragOverBodyArea" style="background-color: rgba(0,0,0,.05);">
+			<div class="b-content" data-bind="nano: true, scrollerShadows: true, initDom: dragOverBodyArea" style="background-color: rgba(0,0,0,.05); backface-visibility: hidden;">
 				<div class="content g-scrollbox" data-scroller-shadows-content>
 					<div class="content-wrapper">
 						<div class="listThreadUidDesc" data-bind="visible: '' !== messageListEndThreadUid(), click: cancelThreadUid">
